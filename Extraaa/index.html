@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        /* Add some basic styling to the cards */
+.card {
+  width: 400px;
+  height: 400px;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Add some basic styling to the card containers */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Add some basic styling to the card images */
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+</style>
+<body>
+
+  <!-- Create a container to hold the cards -->
+            <div id="card-container"></div>
+    
+
+</body>
+<script>
+
+// Get the container element
+let cardContainer = document.getElementById('card-container');
+
+// Create an array of e-commerce image URLs
+let imageUrls = [
+  'https://www.insightssuccess.in/wp-content/uploads/2020/12/785054-ecommerce-istock-020119.jpg',
+  'https://example.com/image2.jpg',
+  'https://example.com/image3.jpg',
+  // Add 97 more image URLs here...
+];
+
+// Create a function to generate a single card
+function createCard(cardNumber, imageUrl) {
+  let card = document.createElement('div');
+  card.className = 'card';
+  
+  let cardImage = document.createElement('img');
+  cardImage.className = 'card-image';
+  cardImage.src = imageUrl;
+  
+  let cardText = document.createElement('div');
+  cardText.innerHTML = `Card #${cardNumber}`;
+  
+  card.appendChild(cardImage);
+  card.appendChild(cardText);
+  
+  return card;
+}
+
+// Create 100 cards and add them to different containers
+for (let i = 0; i < 100; i++) {
+  let cardContainerInner = document.createElement('div');
+  cardContainerInner.className = 'card-container';
+  let card = createCard(i + 1, imageUrls[i % imageUrls.length]);
+  cardContainerInner.appendChild(card);
+  cardContainer.appendChild(cardContainerInner);
+}
+
+
+
+</script>
+</html>

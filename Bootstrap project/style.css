@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container  span{
+    float: left;
+    font-size: 20px;
+    margin-left:10px;
+}
+.container  h4{
+    float: right;
+}
+.col a{
+    text-decoration: none;
+    color: #4F5665;
+}
+.container #mybutton{
+    padding-inline:30px;
+    /* padding: 10px; */
+    border-radius:50px;
+    margin-top: 10px;
+    margin-left:20px;
+    background-color: transparent;
+    color: #F53855;
+    border:1px solid #F53855
+}
+#navbarNav{
+    margin-left: 170px;
+}
+.container h5{
+    margin-left: 340px;
+    float:end;
+}
+.vpn{
+    width: 100%;
+    height: 430px;
+}
+#vpnbtn{
+    background-color: #F53838;
+    color: white;
+}
+#img{
+    object-fit: contain;
+}
+
+@media (max-width:650px) {
+        #img{
+            object-fit: contain;
+            width: 70%;
+        }
+}
+.user{
+    margin-top: 170px;
+    
+}
+@media (max-width:918px) {
+        .user{
+            margin-top: 50px;
+        }
+      .user .row{
+        margin-left: 60px;
+        }
+        .user .row .col{
+            margin-top: 12px;
+        }
+}
+.user .row{
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.user .row col{
+    width: 10%;
+}
+.server{
+    font-size: 19px;
+}
+#Users{
+    float: left;
+    margin-right: 30px;
+}
+.Features{
+    margin-top:100px;
+}
+.Features i{
+    color:#2FAB73;
+    font-size: 20px;
+    float: left;
+    margin-right: 18px;
+}
+.Features h1{
+    margin-top: 80px;
+}
+@media (max-width:650px) {
+    #img1{
+        object-fit: contain;
+        width: 90%;
+    }
+}
+
+.text{
+    margin-top: 80px;
+}
+
+.plan .col{
+    height: 670px;
+    border: 1px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 10px;
+}
+.plan i{
+    float: left;
+    margin-right: 17px;
+    font-size: 20px;
+    margin-left:30px;
+    color:#2FAB73;
+}
+.plan img{
+    margin-left: 69px;
+    margin-top: 40px;
+}
+.plan button{
+    /* padding: 20px; */
+    padding-inline: 49px;
+    padding-block: 10px;
+    border-radius: 50px;
+    /* margin-top: 50px; */
+    margin-left: 70px;
+    border: 2px solid #F53838;
+    background-color: transparent;
+    color: #F53838;
+    font-weight: bolder;
+
+}
+#btn1{
+        margin-top: 110px;
+}
+#btn2{
+        margin-top: 45px;
+}
+.plan h4{
+    float: left;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+.plan span{
+    color: gray;
+    margin-top: 30px;
+}
+.plan #btn{
+        float:right;
+}
+.plan .row{
+    margin-left:100px;
+    margin-top: 80px;
+}
+@media (max-width:931px) {
+    .plan .row{
+        margin-left:60px;
+        
+    }
+}
+
+#txt{
+    margin-top: 130px;
+}
+#txt h1{
+    font-weight: bold;
+}
+#map{
+    object-fit: contain;
+}
+.app{
+    margin-top: 90px;
+}
+
+#app2{
+    width: 120%;
+    height: 100px;
+}
+#happy1{
+    /* margin-right:1px; */
+}
+#happy1{
+    /* width: 30%;
+    height: 230px; */
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+#happy1 img{
+    float: left;
+    margin-right: 20px;
+}
+#happy1 h4{
+    float: left;
+}
+#happily {
+    float:none;
+    font-size: 13px;
+}
+#happy1 span{
+    float:left;
+    margin-left: 80px; 
+}
+.hap1 span{
+    float:left;
+ 
+}
+#happy1 i{
+    color: #FEA250;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.sub{
+    margin-top: 100px;
+}
+.sub p{
+     font-size: 13px;
+     font-weight: lighter;
+     margin-top: 20px;
+
+}
+.sub button{
+    padding-inline: 40px;
+    height: 60px;
+    padding-block: px;
+    border-radius: 20px;
+    box-shadow:chocolate; 
+    background-color: #F53838;
+    color: white;
+    border: none;
+}
+
+.footer img{
+    float: left;
+    margin-right: 20px;
+}
+.footer{
+    margin-top: 100px;
+}
+.footer h1{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.footer i{
+    color:#F53838;
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.footer span{
+    font-size: 15px;
+    color: gray;
+}
